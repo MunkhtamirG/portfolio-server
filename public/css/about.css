@@ -72,6 +72,7 @@
   .about_container {
     grid-template-columns: 1fr;
     gap: 0;
+    height: 100vh;
   }
 
   .about_me {
