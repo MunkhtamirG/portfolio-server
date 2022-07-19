@@ -90,9 +90,6 @@
     width: 65%;
     margin: 0 auto 3rem;
   }
-  #about {
-    height: 100vh;
-  }
 
   .about_cards {
     grid-template-columns: 1fr 1fr;
