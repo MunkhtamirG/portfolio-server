@@ -1,0 +1,12 @@
+{
+  "firstname": "Munkhtamir",
+  "lastname": "Ganbat",
+  "nickname": "Ozy",
+  "gender": "Male",
+  "age": "30",
+  "major": "Fullstack Developer",
+  "email": "munkhtamir.g@outlook.com",
+  "address": "Ulaanbaatar",
+  "phone": "86502727",
+  "img": "./data/profile.jpg"
+}
