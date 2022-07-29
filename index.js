@@ -6,7 +6,6 @@ const readFile = util.promisify(fs.readFile);
 require("dotenv").config();
 const PORT = process.env.PORT;
 let profile;
-let foods;
 const cors = require("cors");
 
 app.use(cors());
