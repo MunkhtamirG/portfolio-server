@@ -10,7 +10,7 @@ const cors = require("cors");
 
 app.use(cors());
 
-readFile("./models/profile.json", "utf-8", (err, profileData) => {
+readFile("./public/profile.json", "utf-8", (err, profileData) => {
   if (err) {
     console.error(err);
   } else {
