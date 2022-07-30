@@ -32,44 +32,10 @@ app.get("/major", (req, res) => {
   res.send({ major: profile.major });
 });
 
-app.get("/profile", (req, res) => {
+app.get("/", (req, res) => {
   res.send(profile);
 });
 
 app.listen(PORT, () => {
   console.log("Server running on " + PORT);
-});
-
-app.set("view engine", "ejs");
-app.set("views", __dirname + "/views");
-app.set("view options", { layout: false });
-
-app.get("/ejs", (req, res) => {
-  res.render("index");
-});
-
-app.get("/", (req, res) => {
-  res.render("index", { name: "ozy" });
-});
-
-app.get("/404", (req, res) => {
-  res.render("404", { message: "oopsie!" });
-});
-
-app.get("/js", (req, res) => {
-  var data = {
-    name: "John",
-    hobbies: ["playing football", "playing chess", "cycling"],
-  };
-  res.render("js", { data: data });
-});
-
-app.get("/foods", (req, res) => {
-  var data = {
-    cinnamon: "https://images.media-allrecipes.com/userphotos/9175447.jpg",
-    donut:
-      "https://www.christinascucina.com/wp-content/uploads/2014/01/IMG_4471.jpg",
-    pie: "https://www.thespruceeats.com/thmb/cro9EKoXGnuv3c5ui3kvSStMj6M=/3667x3667/smart/filters:no_upscale()/autumn-pumpkin-pie-3059962-hero-01-1e1571b6f48049fe853bce541a0d85e0.jpg",
-  };
-  res.render("foods", { data: data });
 });
